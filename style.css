@@ -1,0 +1,90 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}+
+
+.logo {
+
+}
+
+
+
+.navlink a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.navlink.flex-2 {
+    flex: 2;
+}
+.navlink {
+    flex: 1;
+    font-size: 14px;display: flex;
+    justify-content: space-around;
+
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* background-color: aqua; */
+}
+aside {
+   /* background-color: brown; */
+}
+article {
+    /* width: 80%; */
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(173, 62, 117, 0.829);
+}
+.card-header img {
+    border-radius: 50%;
+    width:"100px";
+    padding: 10px;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+}
+.card-header p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+.card-footer {
+    text-align: end;
+}
+
+header img {
+    width: 100%;
+}
+
+header {
+    position: relative;
+}
+
+header div {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.226);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* 
+tutti i link colore nero
+tutti i link non hanno la sootolieatura 
+tutti link hanno font size 14px
+ */
