@@ -1,65 +1,65 @@
-body{
+body {
     margin: 0;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
     position: fixed;
-    z-index: 1;
-    background-color: white;
     width: 100%;
+    background-color: #fff;
+    z-index: 1;
 }
 
-
-
-
 .navlink a {
-    color: black;
+    color: #000;
     text-decoration: none;
-    
+    font-size: 14px;   
 }
 
 .navlink.flex-2 {
     flex: 2;
 }
+
 .navlink {
     flex: 1;
-    font-size: 14px;display: flex;
+    display: flex;
     justify-content: space-around;
-
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 10px;
-    /* background-color: aqua; */
+    margin: 20px;
 }
 
 article {
-    /* width: 80%; */
-    margin: 20px;
-    border: 1px solid black;
+    width: 80%;
+    border: 1px SOLID #000;
+    margin: 10px auto;
     border-radius: 20px;
     padding: 10px;
-    background-color: rgba(173, 62, 117, 0.829);
 }
-.card-header img {
-    border-radius: 50%;
-    width:"100%";
-    padding: 10px;
-}
+
 .card-header {
     display: flex;
     align-items: center;
 }
-.card-header p {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px;
+
+.card-header img {
+    width: 100px;    
+    border-radius: 50%;
 }
-.card-footer {
+
+.card-header p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.card-footer p {
     text-align: end;
 }
 
@@ -73,7 +73,12 @@ header {
 
 header div {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.226);
+    background-color: red;
+}
+
+header div {
+    position: absolute;
+    background-color: rgb(255 255 255 / 50%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -86,47 +91,46 @@ header div {
     text-transform: uppercase;
 }
 
-#chi-siamo img{
-  width: 200px;
+#chi-siamo img {
+    width: 360px;
 }
-#progetti {
+
+.clear {
+    clear: both;
+}
+
+.card-wrapper-prj {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
-.header-card {
+.card-prj {
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.card-header-prj {
     position: relative;
 }
-.header-card img {
-    width: 100%;
-}
-.new-card {
+
+.card-header-prj h3 {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.226);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 50%;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    font-size: 15px;
-    text-transform: uppercase;
+    transform: translate(-50% -50%);
+    color: #fff;
 }
 
-.footer-flex {
+.card-footer-prj {
     display: flex;
     justify-content: space-around;
 }
 
-/* .clear {
-    clear: both;
+.card-footer-prj img {
+    border-radius: 50%;
 }
- */
 
-/* 
-tutti i link colore nero
-tutti i link non hanno la sootolieatura 
-tutti link hanno font size 14px
- */
+.card-prj h3 {
+    color: black;
+}
