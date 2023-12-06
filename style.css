@@ -1,13 +1,17 @@
-
+body{
+    margin: 0;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}+
-
-.logo {
-
+    padding: 0 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
 }
+
 
 
 
@@ -29,11 +33,10 @@ nav {
 main {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin: 10px;
     /* background-color: aqua; */
 }
-aside {
-   /* background-color: brown; */
-}
+
 article {
     /* width: 80%; */
     margin: 20px;
@@ -44,7 +47,7 @@ article {
 }
 .card-header img {
     border-radius: 50%;
-    width:"100px";
+    width:"100%";
     padding: 10px;
 }
 .card-header {
@@ -82,6 +85,45 @@ header div {
     font-size: 25px;
     text-transform: uppercase;
 }
+
+#chi-siamo img{
+  width: 200px;
+}
+#progetti {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-card {
+    position: relative;
+}
+.header-card img {
+    width: 100%;
+}
+.new-card {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.226);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .clear {
+    clear: both;
+}
+ */
 
 /* 
 tutti i link colore nero
